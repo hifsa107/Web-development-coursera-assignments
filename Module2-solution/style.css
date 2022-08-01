@@ -1,0 +1,60 @@
+h1{
+    font-size: xx-large;
+    color: darkblue;
+    text-align: center;
+    text-transform: uppercase;
+}
+*{
+    box-sizing: border-box;
+}
+.row{
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    display: inline-block;
+}
+.col{
+    border:1px solid black;
+    background-color: lightblue;
+    position: relative;
+    float: left;
+}
+p{
+    float: left;
+    clear: left;
+    display: inline;
+    text-align: justify;
+    padding: 12px;
+}
+.pas, .sus, .chic{
+    border:1px solid black;
+    background-color: dodgerblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    position: absolute;
+    right:0px;
+    top: 0px;
+    width: 80px;
+}
+
+@media (min-width: 922px) {
+    .col-1,.col-2,.col-3{
+        width:33.3%;
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    .col-1, .col-2{
+        width: 50%;
+    }
+    .col-3{
+        width: 100%;
+    }
+}
+@media (max-width: 767px)  {
+
+    .col-1,.col-2,.col-3{
+        width: 100%;
+    }
+
+}
